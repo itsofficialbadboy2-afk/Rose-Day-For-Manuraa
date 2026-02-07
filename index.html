@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A Special Surprise 🎀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="stage1" class="container">
+        <h1 class="snap-pulse" style="color: var(--pink-dark);">Ready for a surprise?</h1>
+        <div class="slider-wrapper">
+            <div id="slider-fill"></div>
+            <div id="knob" class="slider-knob">🌸</div>
+            <span class="slider-text">slide to open</span>
+        </div>
+    </div>
+
+    <div id="stage2" class="container hidden">
+        <div class="letter-card">
+            <h2 style="color:var(--pink-dark); margin:0;">Happy Rose Day Manuraa! <span class="snap-pulse" style="display:inline-block;">🌹</span></h2>
+            <p style="font-size: 17px;">Hey babe… Happy Rose Day 🌹 I couldn’t give you a rose today because of the distance between us… so I made this little player just for you… with all my love in it… I love you.</p>
+
+            <div class="player-card">
+                <div class="player-top">
+                    <img src="cover.jpg" alt="Art" class="album-art">
+                    <div class="song-info">
+                        <span class="song-name">Mann</span>
+                        <span class="artist-name">The Yellow Diary</span>
+                    </div>
+                    <button id="playBtn" class="play-btn">▶</button>
+                </div>
+
+                <div class="progress-container" id="progressContainer">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="time-info">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+
+                <div class="controls">
+                    <button id="lyricsToggleBtn" class="btn action-btn" onclick="toggleLyrics()">Show Lyrics</button>
+                    <button class="btn action-btn" onclick="window.open('https://youtu.be/eTucXMU8ctw?si=H14O4teloBNfzngM', '_blank')">Watch Video</button>
+                </div>
+
+                <div id="lyricsPanel">
+                    <strong>Lyrics:</strong><br><br>
+                    कहीं मिलती सी अँखियों में छुपे हुए वादों से हम<br>
+                    बिन कहे कुछ लम्हों को करते हैं आधे से हम<br>
+                    हर लम्हे में बातें तेरी-मेरी होती सी हैं<br>
+                    फिर भी तेरे साथ में पल मुझे लगते हैं कम<br><br>
+                    दूर हो तू तो ये सारा जहाँ<br>
+                    याद तेरी मैं जगाता रहा<br><br>
+                    दिल दरिया, ये हवा बे-हया<br>
+                    धीमे से तेरे नाम की आवाज़ करे<br>
+                    मन भी तो ये पगला है ज़रा<br>
+                    बिन बात के ही पिघला है करे<br><br>
+                    कभी याद में तेरी मेरा मन यूँ ही तरसा सा है<br>
+                    फिर रात से बात ये तेरी-मेरी करता सा है<br>
+                    तेरे ख़ाब दिखा के मन से ये खेले रतिया<br>
+                    जिस रात में बात नहीं दिल करता सा है<br><br>
+                    तेरे ही नाम रात का आसमाँ<br>
+                    तारे भी माँगे है दिल का बयाँ<br><br>
+                    दिल दरिया, ये हवा बे-हया<br>
+                    धीमे से तेरे नाम की आवाज़ करे<br>
+                    मन भी तो ये पगला है ज़रा<br>
+                    बिन बात के ही पिघला है करे<br><br>
+                    दिल दरिया, ये हवा बे-हया<br>
+                    धीमे से तेरे नाम की आवाज़ करे<br>
+                    मन भी तो ये पगला है ज़रा<br>
+                    बिन बात के ही पिघला है करे
+                </div>
+
+                <audio id="myAudio" src="mysong.mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
